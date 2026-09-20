@@ -28,7 +28,7 @@ function agregarProducto(nombre, precio){
 }
 
 function editarProducto(id, nombre, precio){
-    let producto = productos.find(function(producto)){
+    let producto = productos.find(function(producto){
         return producto.id==id;
     });
     if(producto){
@@ -39,6 +39,26 @@ function editarProducto(id, nombre, precio){
     console.log("Producto no encontrado");
     }
 }
+function eliminarProducto(id){
+    let posicion = productos.findIndex(function(producto){
+    return producto.id == id;
+    });
+    if(posicion != -1){
+        productos.splice(posicion,1);
+        console.log("Producto eliminado");
+    }else{
+     console.log("Producto no encontrado");
+    }
+}
+function listarProductos(){
+    console.log("\n--- Productos ---");
+    productos.forEach(function(producto){
+        console.log(
+            producto.id + "."+ producto.nombre+"-$"+producto.precio );
+
+    });
+}
+
 
 
 
