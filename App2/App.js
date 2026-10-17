@@ -12,16 +12,13 @@ import { Perfil } from './Components/Perfil';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Hola Mundo React Native !</Text>
-      <Image source={require("./assets/image.png")} ></Image>
-      <Text>----------------------</Text>
-      <Saludo></Saludo>
-      <Saludo/>
-      <Text>----------------------</Text>
-      <Saludos2></Saludos2>
-      <Saludos2/>
-      <Text>----------------------</Text>
-      <Perfil></Perfil>
+
+      <Perfil nombre = "Genaro" materia= "Movil"/>
+
+      <Perfil nombre = "Emilio" cuatri= "4"/>
+
+      <Perfil nombre = "Jenny" carrera= "TIID"/>
+
       
 
 
