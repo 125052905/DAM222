@@ -5,6 +5,7 @@ import { StyleSheet, Text,View,Button} from 'react-native';
 import { useState } from 'react';
 import Tarjetas from './Tarjetas';
 import SafeScreens from './SafeScreen';
+import PressableSwitch from './PressableSwitch';
 
 
 
@@ -18,6 +19,9 @@ export default function MenuScreen() {
 
     case 'SafeScreen':
         return <SafeScreens/>
+      
+         case 'Pressable':
+        return <PressableSwitch/>
 
     case 'Menu':
         default:
@@ -33,8 +37,8 @@ export default function MenuScreen() {
             <Button title='ImageBackgroung'onPress={()=>setScreen('ImageBackgroung')}></Button>    
              <Button title='Modal'onPress={()=>setScreen('Modal')}></Button>   
               <Button title='ActivityIndicator'onPress={()=>setScreen('ActivityIndicator')}></Button>     
-
-
+             
+          
       <StatusBar style="auto" />
     </View>
   );
