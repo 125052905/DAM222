@@ -6,6 +6,8 @@ import { useState } from 'react';
 import Tarjetas from './Tarjetas';
 import SafeScreens from './SafeScreen';
 import PressableSwitch from './PressableSwitch';
+import SectionListScreen from './SectionListScreen';
+import ImageBackgroung from './imageBackgroungScreen';
 
 
 
@@ -23,6 +25,12 @@ export default function MenuScreen() {
          case 'Pressable':
         return <PressableSwitch/>
 
+        case 'SectionList':
+        return <SectionListScreen/>
+
+         case 'ImageBack':
+        return <ImageBackgroung/>
+
     case 'Menu':
         default:
         return (
@@ -33,8 +41,8 @@ export default function MenuScreen() {
         <Button title='SafeAreaView'onPress={()=>setScreen('SafeScreen')}></Button>
          <Button title='Pressable'onPress={()=>setScreen('Pressable')}></Button>        
           <Button title='TextInput'onPress={()=>setScreen('TextInput')}></Button>    
-           <Button title='FlatList'onPress={()=>setScreen('FlatList')}></Button>    
-            <Button title='ImageBackgroung'onPress={()=>setScreen('ImageBackgroung')}></Button>    
+           <Button title='SectionList'onPress={()=>setScreen('SectionList')}></Button>    
+            <Button title='ImageBackgroung'onPress={()=>setScreen('ImageBack')}></Button>    
              <Button title='Modal'onPress={()=>setScreen('Modal')}></Button>   
               <Button title='ActivityIndicator'onPress={()=>setScreen('ActivityIndicator')}></Button>     
              
