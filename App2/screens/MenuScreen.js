@@ -1,4 +1,3 @@
-
 /* Zona de importaciones*/
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text,View,Button} from 'react-native';
@@ -8,8 +7,7 @@ import SafeScreens from './SafeScreen';
 import PressableSwitch from './PressableSwitch';
 import SectionListScreen from './SectionListScreen';
 import ImageBackground from './ImageBackgroundScreen';
-
-
+import Inicio from './Inicio';
 
 /*Zona Main*/
 export default function MenuScreen() {
@@ -30,6 +28,9 @@ export default function MenuScreen() {
 
          case 'ImageBack':
         return <ImageBackground/>
+
+        case 'ActivityIndicator':
+         return <Inicio onRegresar={() => setScreen('Menu')} />
 
     case 'Menu':
         default:
