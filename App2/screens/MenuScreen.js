@@ -7,7 +7,7 @@ import Tarjetas from './Tarjetas';
 import SafeScreens from './SafeScreen';
 import PressableSwitch from './PressableSwitch';
 import SectionListScreen from './SectionListScreen';
-import ImageBackgroung from './imageBackgroungScreen';
+import ImageBackground from './ImageBackgroundScreen';
 
 
 
@@ -29,7 +29,7 @@ export default function MenuScreen() {
         return <SectionListScreen/>
 
          case 'ImageBack':
-        return <ImageBackgroung/>
+        return <ImageBackground/>
 
     case 'Menu':
         default:
