@@ -8,6 +8,7 @@ import PressableSwitch from './PressableSwitch';
 import SectionListScreen from './SectionListScreen';
 import ImageBackground from './ImageBackgroundScreen';
 import Inicio from './Inicio';
+import ModalBottomSheetScreen from './ModalBottomSheetScreen';
 
 /*Zona Main*/
 export default function MenuScreen() {
@@ -28,6 +29,8 @@ export default function MenuScreen() {
 
          case 'ImageBack':
         return <ImageBackground/>
+         case 'ModalBottomSheet':
+        return <ModalBottomSheetScreen/>
 
         case 'ActivityIndicator':
          return <Inicio onRegresar={() => setScreen('Menu')} />
@@ -44,7 +47,7 @@ export default function MenuScreen() {
           <Button title='TextInput'onPress={()=>setScreen('TextInput')}></Button>    
            <Button title='SectionList'onPress={()=>setScreen('SectionList')}></Button>    
             <Button title='ImageBackgroung'onPress={()=>setScreen('ImageBack')}></Button>    
-             <Button title='Modal'onPress={()=>setScreen('Modal')}></Button>   
+             <Button title='ModalBottomSheet'onPress={()=>setScreen('ModalBottomSheet')}></Button>   
               <Button title='ActivityIndicator'onPress={()=>setScreen('ActivityIndicator')}></Button>     
              
           
