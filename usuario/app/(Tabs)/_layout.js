@@ -19,9 +19,15 @@ export default function TabsLayout(){
             />
              <Tabs.Screen
             name="consulta"
-            options={{title:"Listado"}}
-
+            options={{title:"Listado",
+             tabBarIcon:({color,size})=>(
+          
+            <Ionicons name="folder"size={15}color={"purple"}/>
+             )
+              }}
             />
+           
+            
         </Tabs>
 
     );
